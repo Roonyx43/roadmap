@@ -24,7 +24,7 @@ h1{
 header{
   display: flex;
   justify-content: space-around;
-  background-color: rgb(100, 100, 100);
+  background-color: #538fff;
   color: white;
   padding:20px;
   box-shadow: 0px 1px 2px 0px black;
@@ -47,9 +47,9 @@ header{
   background-color: #fff;
   padding: 20px;
   border-radius: 10px;
-  width: 80%;
-  max-width: 400px;
-  text-align: center;
+  width: 40%;
+  max-width: 600px;
+  text-align: start;
 }
 
 .close {
@@ -68,7 +68,8 @@ strong{
 }
 
 header>h1:hover{
-  color: #538fff;
+  transform: translate(-2px, -1px);
+  text-shadow: 0px 1px 2px black;
   transition: 0.2s;
 }
 
@@ -84,7 +85,8 @@ nav>a{
 }
 
 nav>a:hover{
-  color: #538fff;
+  transform: translate(-2px, -1px);
+  text-shadow: 0px 1px 2px black;
   transition: 0.2s;
 }
 
@@ -210,6 +212,12 @@ ul li {
   display: flex;
   align-items: center;
   margin: 5px 0;
+  user-select: none;
+}
+
+li:hover{
+  transform: translate(-2px, -1px);
+  transition: 0.1s;
 }
 
 /* Labels de tarefas */
@@ -222,6 +230,7 @@ label {
 
 label:hover {
   color: #538fff;
+  transition: 0.1s;
 }
 
 /* Div dentro do details */
@@ -276,4 +285,58 @@ details > div {
 .inicio>h1{
   margin-bottom: 180px;
   text-align: center;
+}
+
+
+.progress-container {
+  width: 100%;
+  background-color: #f3f3f3;
+  border-radius: 2px;
+  margin-top: 10px;
+  overflow: hidden;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 20px;
+  position: relative;
+  background-color: #ccc;
+}
+
+.progress {
+  height: 100%;
+  background-color: #4caf50;
+  width: 0%;
+  transition: width 0.3s; 
+}
+
+#html-progress-text, #css-progress-text, #js-progress-text, #dom-progress-text, #seo-progress-text, #design-progress-text, #all-progress-text{
+  display: block;
+  text-align: center;
+  margin-top: 5px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.desafio-html{
+  width: 100%;
+}
+button{
+  width: 100%;
+  background-color: #538fff;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.textosDivididos{
+  display: flex;
+  gap: 30px;
+}
+
+.title-req{
+  color: #538fff;
+  
 }
